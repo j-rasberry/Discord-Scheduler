@@ -1,0 +1,21 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    style
+            include ./style/main-style.desktop.css
+            include ./style/login-system/login.desktop.css
+            include ./style/login-system/sign-up.desktop.css
+
+    title Discord Scheduler - Sign Up
+form.login-system-form-wrapper(action='' method='post')
+  input#login-username-input.login-system-form-input(type='text' name='username' placeholder='username')
+  input#login-username-input.login-system-form-input(type='text' name='email' placeholder='email')
+  input#login-password-input.login-system-form-input(type='password' name='password' placeholder='password')
+  input#login-password-input.login-system-form-input(type='password' name='password' placeholder='re-type password')
+  .login-system-buttons-wrapper
+    button.login-system-button.login-system-login-button(type='button' onclick="window.location.href='./login'") Login
+    button.login-system-button.login-system-sign-up-button(type='submit' value='Sign Up')
+      | Sign
+      | Up

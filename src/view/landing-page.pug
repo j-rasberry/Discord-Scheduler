@@ -1,0 +1,21 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    style
+            include ./style/main-style.desktop.css
+            include ./style/dashboard/dashboard.desktop.css
+
+    title Discord Scheduler
+body 
+- var loggedIn= isLoggedIn
+
+
+header
+    .header-title Discord Scheduler 
+    #loggedIn
+        if loggedIn
+            h2 true
+        else
+              include ./dashboard-components/login-system.pug

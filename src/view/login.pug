@@ -1,0 +1,17 @@
+html 
+    head 
+        style
+            include ./style/main-style.desktop.css
+            include ./style/login-system/login.desktop.css
+        title Discord Scheduler - Login
+    body 
+        form(action="/auth" method="post" class="login-system-form-wrapper")
+            input(input type="text" name="username" class="login-system-form-input" id="login-username-input"
+                placeholder="username") 
+            input(input type="password" name="password" class="login-system-form-input" id="login-password-input"
+                placeholder="password")
+            div(class="login-system-buttons-wrapper")
+                button(type="submit" class="login-system-button login-system-login-button") Login
+                button(onclick="window.location.href='./sign-up'" class="login-system-button login-system-sign-up-button" type="button" value="Sign Up") Sign Up
+            h1 Temparary Test User
+            h2 username:test password:test

@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #24292E;
+    --secondary-color: #2F3236;
+    --tertiary-color: #202225;
+    --accent-color: #7388DA;
+}
+
+body {
+    margin: 0;
+    background: var(--primary-color);
+}
+
+header {
+    background: var(--tertiary-color);
+    height: 100px;
+}
